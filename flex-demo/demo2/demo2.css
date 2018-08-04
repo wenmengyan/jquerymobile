@@ -1,0 +1,35 @@
+*{
+  margin: 0;
+  padding:0;
+}
+header{
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+  height: 60px;
+  background: black;
+}
+.logo{
+   display:flex;
+    align-items: center;
+}
+.nav{
+  list-style: none;
+  display:flex;
+    align-content: space-between;
+  justify-content: space-between;
+  
+}
+.nav li{
+  font-size:24px;
+  width:100px;
+  text-align: center;
+  color:white;
+  line-height: 60px;
+}
+.login{
+    display:flex;
+    align-items: center;
+      justify-content: space-between;
+      width:80px;
+}

@@ -1,0 +1,138 @@
+body,html{background-color:#4876ef;}
+#wrapper{
+  width:400px;
+  height:500px;
+  background-color: #fff;
+  position:absolute;
+  top:50%;
+  left:50%;
+  margin-left: -200px;
+  margin-top:-250px;
+}
+header{
+  width:100%;
+  height: 91px;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+header div{
+  display: flex;
+  align-items: flex-end;
+}
+header img{
+  position: relative;
+  top:-30px;
+}
+.count{
+  width:100%;
+  margin-top: 10px;
+}
+.count form{
+  width:90%;
+  margin:0 auto;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+/*   display: -webkit-box;
+  -webkit-box-orient:vertical; */
+}
+.count input{
+    display:block;
+    padding:13px;
+    box-shadow: 0 0 1px #999;
+    border:0px;
+}
+.count input:first-child{
+   border-radius:3px 3px 0 0;
+}
+.count input:nth-child(2){
+   border-radius:0 0 3px 3px;
+}
+.count input:nth-child(3){
+   margin-top:30px;
+   background-color: #4876ef;
+   color:white;
+   border-radius: 3px;
+}
+.count div{
+  width:90%;
+  margin:10px auto;
+  display: flex;
+  justify-content: space-between;
+/*   display: -webkit-box;
+  -webkit-box-pack: justify; */
+}
+.count div span{
+  display:block;
+}
+.count div input{
+  float: left;
+  margin-top:5px;
+  margin-right:5px;
+}
+footer ul{
+   width:100%;
+   display: flex;
+   justify-content: center;
+   /*  display:-webkit-box;
+   -webkit-box-pack:center;  */
+}
+/* footer ul li{
+  display:-webkit-box;
+} */
+footer ul li a{display:block;}
+footer ul li img{
+  display:block;
+  width:60%;
+  margin:0 auto;
+}
+@media screen and (max-width: 420px){
+  #wrapper{
+    width:100%;
+    height:100%;
+    position: absolute;
+    top:0;
+    left:0;
+    margin: 0;
+    background: #4876ef;
+  }
+  header{
+  width:100%;
+  height: 91px;
+  display: flex;
+  justify-content: center;
+   overflow: hidden;
+}
+header div{
+  display: flex;
+  align-items: flex-start;
+}
+header img{
+  position: relative;
+  top:30px;
+  
+}
+  .count form input:nth-child(3){
+    background: #0000ff;
+  }
+   .count  div span{
+      display: block;
+      color:#ffffff;
+   }
+   footer{
+    width: 90%;
+    margin:auto;
+  }
+   footer ul{
+      width:100%;
+      display: flex;
+      justify-content: center;
+      /* display: -webkit-box;
+      -webkit-box-pack:center; */
+   }
+   footer ul li{
+     /*  display: -webkit-box; */
+      width:30%;
+   }
+}

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>bootstrap组件应用</title>
+  <link rel="stylesheet" href="../demo2/css/bootstrap.css">
+  <link rel="stylesheet" href="../demo2/index.css">
+  <script src="../demo2/js/jquery.min.js"></script>
+  <script src="../demo2/js/bootstrap.js"></script>
+  <script src="../demo2/js/index.js"></script>
+</head>
+
+<body>
+
+  <!--   导航 -->
+
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+          aria-expanded="false">
+		        <span class="sr-only"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+        <a class="navbar-brand" href="#">wanna one</a>
+      </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">综述 <span class="sr-only">(current)</span></a></li>
+          <li><a href="#">简述</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">成员 <span class="caret"></span></a>
+            <ul class="dropdown-menu" id="drop-nav">
+              <li><a href="#daniel">姜丹尼尔</a></li>
+              <li><a href="#jihoon">朴志训</a></li>
+              <li><a href="#deihui">李大辉</a></li>
+              <li><a href="#zeihuan">金在焕</a></li>
+              <li><a href="#songwu">邕圣祐</a></li>
+            </ul>
+          </li>
+          <li><a href="#" data-toggle="modal" data-target="#myModal">经历</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="jumbotron">
+    <!-- 轮播图 -->
+    <div class="container">
+      <div id="scollPic" class="row">
+        <div id="box" class="col-xs-12 col-sm-12 col-md-12 col-lg-12"></div>
+      </div>
+      <hr/>
+    </div>
+    <!-- 内容 -->
+    <div class="container">
+      <div class="contact">
+        <div class="col-md-12">
+          <hr/>
+          <img src="../demo2/image/contact.jpg" alt="...">
+          <div class="caption">
+            <h3>组合介绍</h3>
+            <hr/>
+            <p> WANNA ONE是韩国YMC Entertainment于2017年8月7日推出的男子演唱组合，由尹智圣、河成云、黄旼泫、邕圣祐、金在奂、姜丹尼尔、朴志训、朴佑镇、裴珍映、李大辉、赖冠霖等十一位成员组成。2017年6月16日，WANNA
+              ONE的十一位成员在Mnet音乐选秀节目《Produce 101 第二季》中获胜，获得出道资格；8月3日，首部团体综艺节目《Wanna One Go》开播；8月7日，发行首张迷你专辑《1X1=1（TO BE ONE）》并在首尔高尺巨蛋举行出道Showcase
+              Concert，正式出道；8月16日，凭借首张迷你专辑主打曲《Energetic》在MBC音乐节目《Show Champion》中获得出道之后的首个一位。
+            </p>
+            <hr/>
+            <a class="btn btn-lg btn-primary" href="https://baike.baidu.com/item/WANNA%20ONE/20864648?fr=aladdin#4" target="_blank" role="button">点我了解</a>
+          </div>
+          <hr/>
+        </div>
+      </div>
+    </div>
+    <!--   标签页 -->
+    <div class="container" id="contact2">
+      <!-- Nav tabs -->
+      <ul class="nav nav-tabs" role="tablist" id="menu">
+        <li role="presentation" class="active"><a href="#daniel" role="tab" data-toggle="tab">姜丹尼尔</a></li>
+        <li role="presentation"><a href="#jihoon" role="tab" data-toggle="tab">朴志训</a></li>
+        <li role="presentation"><a href="#deihui" role="tab" data-toggle="tab">李大辉</a></li>
+        <li role="presentation"><a href="#zeihuan" role="tab" data-toggle="tab">金在焕</a></li>
+        <li role="presentation"><a href="#songwu" role="tab" data-toggle="tab">邕圣祐</a></li>
+      </ul>
+      <!-- Tab panes -->
+      <div class="tab-content">
+        <div role="tabpanel" class="tab-pane active" id="daniel">
+          <div class="col-md-7">
+            <h2 class="feature-heading">姜丹尼尔<span class="text-muted"> rap担当</span></h2>
+            <p class="lead">4月7日，参加Mnet音乐选秀节目《PRODUCE 101 第二季》；6月16日，以节目第1名的成绩获得出道资格；7月1日、2日，随组合在韩国首尔举办Produce101第二季纪念演唱会；8月7日，以韩国男子演唱组合WANNA
+              ONE成员的名义正式出道
+            </p>
+          </div>
+          <div class="col-md-5">
+            <img class="feature-image img-responsive" src="../demo2/image/01.jpg">
+          </div>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="jihoon">
+          <div class="col-md-5">
+            <img class="feature-image img-responsive" src="../demo2/image/02.jpg">
+          </div>
+          <div class="col-md-7">
+            <h2 class="feature-heading">朴志训<span class="text-muted"> dance担当</span></h2>
+            <p class="lead">4月7日，出演mnet音乐选秀节目《PRODUCE 101 第二季》，并最终以第2名的成绩在节目中获胜，成功获得出道资格；7月1日，随组合在韩国首尔举办Produce101第二季纪念演唱会；同年，朴志训随组合WANNA
+              ONE正式出道
+            </p>
+          </div>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="deihui">
+          <div class="col-md-5">
+            <img class="feature-image img-responsive" src="../demo2/image/03.jpg">
+          </div>
+          <div class="col-md-7">
+            <h2 class="feature-heading">李大辉<span class="text-muted"> dance担当</span></h2>
+            <p class="lead"> 4月7日，李大辉出演了mnet音乐选秀节目《PRODUCE 101 第二季》，并最终在节目中获得季军，成功获得出道资格；7月1日，随组合在韩国首尔举办Produce101第二季纪念演唱会；同年，李大辉以韩国男子演唱组合WANNA
+              ONE成员的名义正式出道
+            </p>
+          </div>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="zeihuan">
+          <div class="col-md-5">
+            <img class="feature-image img-responsive" src="../demo2/image/04.jpg">
+          </div>
+          <div class="col-md-7">
+            <h2 class="feature-heading">金在焕<span class="text-muted"> volcal担当</span></h2>
+            <p class="lead">2012年，金在奂出演了tvN音乐选秀节目《Korea's Got Talent 2》，首次进入到大众的视野。2016年2月10日，金在奂出演了韩国SBS电视台音乐综艺节目《Vocal战争：神的声音》。4月7日，金在奂出演了Mnet音乐选秀节目《PRODUCE
+              101 第二季》，并最终以第4名的成绩在该节目中获胜，成功获得出道资格；8月7日，金在奂随组合WANNA ONE发行首张迷你专辑《1X1=1（TO BE ONE）》，正式出道。
+            </p>
+          </div>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="songwu">
+          <div class="col-md-5">
+            <img class="feature-image img-responsive" src="../demo2/image/05.jpg">
+          </div>
+          <div class="col-md-7">
+            <h2 class="feature-heading">邕圣祐<span class="text-muted"> dance担当</span></h2>
+            <p class="lead">4月7日，出演Mnet音乐选秀节目《PRODUCE 101 第二季》，并最终以第5名的成绩在节目中获胜；7月1日，随组合在韩国首尔举办Produce101第二季纪念演唱会；同年，邕圣祐随韩国男子演唱组合WANNA ONE正式出道。
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="container" style="margin-top: 50px;color: gray;">
+      <p>&copy; akira </p>
+    </footer>
+    <!--  弹出层 -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">wanna one演艺经历</h4>
+          </div>
+          <div class="modal-body">
+            2017年4月7日，由韩国Mnet电视台制作的选秀节目《Produce 101 第二季》首播，该节目由来自多家经纪公司的101名男练习生相互竞争，最终确定获胜了前十一位练习生尹智圣、河成云、黄旼泫、邕圣祐、金在奂、姜丹尼尔、朴志训、朴佑镇、裴珍映、李大辉、赖冠霖以限定组合WANNA
+            ONE成员的名义和YMC Entertainment旗下艺人的身份进行为期一年半的活动；6月19日，组合成员正式合宿，并展开日程活动；7月1日，在韩国首尔举办Produce101第二季纪念演唱会“PRODUCE 101
+            Season 2 FINALE CONCERT”；8月3日，WANNA ONE的首部团体综艺节目《Wanna One Go》开播；8月7日，发行首张迷你专辑《1X1=1（TO BE ONE）》，该专辑共收录了包括主打曲《Energetic》在内的7首歌曲，一经发行便在韩国主要音源榜实时榜单占据一位；同日，在首尔高尺巨蛋举行“Wanna
+            One Premier Show-Con”出道Showcase Concert，正式出道；8月16日，出演MBC音乐节目《Show Champion》，并凭借首张迷你专辑主打曲《Energetic》获得出道之后的首个一位；随后，WANNA
+            ONE又凭借该歌曲获得Mnet音乐节目《M!Countdown》等5个韩国音乐节目的14个一位；同月，Wanna One赴美参加KCON演唱会并拍摄团综《Wanna One Go》第二季，这是Wanna One集体参加的首次正式海外行程；9月20日，出席第一届SORIBADA最佳音乐大奖，并获得新韩流新人赏、新韩流Rising
+            Hot Star两个奖项。
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script type="text/javascript">
+    $(function () {
+      $("#drop-nav a").click(
+        function () {
+          var href = $(this).attr("href");
+          $('#menu a[href=' + href + ']').tab('show');
+        })
+    })
+  </script>
+</body>
+
+</html>
